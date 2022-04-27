@@ -5,11 +5,10 @@ console.log("working");
 let map = L.map("mapid").setView([40.7, -94.5], 4);
 
 // Create tile layer to be background of map
-let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+let streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    // tileSize: 512,
-    // zoomOffset: -1,
+    id: "mapbox/streets-v11",
     accessToken: mapboxAPIKey
 });
 // Add 'graymap' tile layer to map
