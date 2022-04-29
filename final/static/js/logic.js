@@ -1,4 +1,4 @@
-/// Add console.log to check if code is working
+// Add console.log to check if code is working
 console.log("working");
 
 // Create street view tile layer to be default background of map
