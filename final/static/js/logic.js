@@ -204,7 +204,7 @@ legend.onAdd = function() {
   return div;
 };
   
-// Add legen to map
+// Add legend to map
 legend.addTo(map);
 
 // TECTONIC PLATES
